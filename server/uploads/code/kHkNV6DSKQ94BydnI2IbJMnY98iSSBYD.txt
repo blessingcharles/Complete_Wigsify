@@ -1,9 +1,0 @@
-<html></html>
-
- <style>body{
- 
-  
-}</style>
-
- <script>  
-</script>
