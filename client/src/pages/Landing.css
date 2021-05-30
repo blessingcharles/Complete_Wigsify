@@ -1,0 +1,38 @@
+
+.div_hang { font-family: 'Ubuntu', sans-serif; position: absolute; top: 10%; left: 50%; transform: translateX(-50%) translateY(-50%); } /* center text styling */
+.div_h1 { font-size: 4.5em; letter-spacing: -4px; font-weight: 700; color: #7e2ea0; text-align: center; } /* h1 styling */
+@media screen and (max-width: 488px) { h1 { font-size: 1.6em; letter-spacing: -2px; } } /* control h1 font size below 768px screen */
+
+/* animation duration and fill mode */
+.cssanimation {
+animation-duration: 10s;
+animation-fill-mode: both;
+display: inline-block;
+}
+
+/* hangAndDropLeft animation declaration & iteration counting */
+.hangAndDropLeft { animation-name: hangAndDropLeft }
+
+/* hangAndDropLeft animation keyframes */
+@keyframes hangAndDropLeft {
+from {transform-origin: left;}
+15%{
+transform:translateY(50px)
+}
+30% {
+    transform: rotate(70deg);
+    transform-origin: left;
+}
+50% {
+    transform: rotate(10deg);
+    transform-origin: left;
+}
+60% {
+    transform: rotate(90deg);
+    transform-origin: left;
+}
+to {
+    transform: translateY(900px);
+    transform-origin: right;
+}
+}

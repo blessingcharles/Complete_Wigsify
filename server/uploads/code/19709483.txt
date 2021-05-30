@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+sudo apt-get remove libqt5core5a
+sudo apt-get install libqt5core5a
+sudo apt-get remove libdouble-conversion1
+sudo apt-get install libdouble-conversion1
+sudo apt-get install virtualbox-qt
